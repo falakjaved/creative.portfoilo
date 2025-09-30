@@ -37,47 +37,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/projects">Projects</Link>
               <Link href="/contact">Contact</Link>
             </div>
-
-            {/* Right Social Links */}
-            <div className="flex gap-4 text-gray-600">
-              <a
-                href="https://linkedin.com/in/yourusername"
-                target="_blank"
-                className="hover:text-purple-700"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://github.com/yourusername"
-                target="_blank"
-                className="hover:text-purple-700"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://instagram.com/yourusername"
-                target="_blank"
-                className="hover:text-purple-700"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://tiktok.com/@yourusername"
-                target="_blank"
-                className="hover:text-purple-700"
-              >
-                TikTok
-              </a>
-            </div>
           </div>
         </nav>
 
         {/* Page Content */}
         <main className="flex-1 max-w-6xl mx-auto p-6">{children}</main>
 
-        {/* Footer */}
-        <footer className="border-t mt-12 py-6 text-center text-sm text-gray-600">
-          © {new Date().getFullYear()} Falak Javed. Built with ❤️ & Next.js
+        {/* Footer with Social Links */}
+        <footer className="border-t mt-12 py-6 text-center text-sm text-gray-600 space-y-3">
+          <div className="flex justify-center gap-6 text-purple-600 font-medium">
+           <a 
+              href="https://www.linkedin.com/in/falakjavad-javed-7288b5387" 
+              target="_blank" 
+             rel="noopener noreferrer" 
+             className="hover:text-pink-600"
+              >
+            LinkedIn
+            </a>
+            <a href="https://github.com/falakjaved" target="_blank" className="hover:text-pink-600">
+              GitHub
+            </a>
+            <a href="https://instagram.com/falak_javed2" target="_blank" className="hover:text-pink-600">
+              Instagram
+            </a>
+            <a href="https://tiktok.com/@falakjaved01" target="_blank" className="hover:text-pink-600">
+              TikTok
+            </a>
+          </div>
+          <p>© {new Date().getFullYear()} Falak Javed. Built with ❤️ & Next.js</p>
         </footer>
       </body>
     </html>
