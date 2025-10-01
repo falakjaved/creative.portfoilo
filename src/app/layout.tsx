@@ -44,27 +44,27 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="flex-1 max-w-6xl mx-auto p-6">{children}</main>
 
         {/* Footer with Social Links */}
-        <footer className="border-t mt-12 py-6 text-center text-sm text-gray-600 space-y-3">
+        <footer className="border-t mt-12 py-6 text-center text-sm text-purple-600 space-y-3">
           <div className="flex justify-center gap-6 text-purple-600 font-medium">
            <a 
               href="https://www.linkedin.com/in/falakjavad-javed-7288b5387" 
               target="_blank" 
              rel="noopener noreferrer" 
-             className="hover:text-pink-600"
+             className="hover:text-purple-600"
               >
             LinkedIn
             </a>
-            <a href="https://github.com/falakjaved" target="_blank" className="hover:text-pink-600">
+            <a href="https://github.com/falakjaved" target="_blank" className="hover:text-purple-600">
               GitHub
             </a>
-            <a href="https://instagram.com/falak_javed2" target="_blank" className="hover:text-pink-600">
+            <a href="https://instagram.com/falak_javed2" target="_blank" className="hover:text-purple-600">
               Instagram
             </a>
-            <a href="https://tiktok.com/@falakjaved01" target="_blank" className="hover:text-pink-600">
+            <a href="https://tiktok.com/@falakjaved01" target="_blank" className="hover:text-purple-600">
               TikTok
             </a>
           </div>
-          <p>© {new Date().getFullYear()} Falak Javed. Built with ❤️ & Next.js</p>
+          <p>© {new Date().getFullYear()} Falak Javed. Built with  & Next.js</p>
         </footer>
       </body>
     </html>

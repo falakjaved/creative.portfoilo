@@ -23,8 +23,8 @@ export default function Projects() {
             key={i}
             className="p-6 border rounded-lg shadow-sm hover:shadow-lg transition bg-white/70 backdrop-blur"
           >
-            <h3 className="text-xl font-semibold text-pink-600">{p.title}</h3>
-            <p className="text-gray-600 mt-2">{p.description}</p>
+            <h3 className="text-xl font-semibold text-purple-600">{p.title}</h3>
+            <p className="text-purple-600 mt-2">{p.description}</p>
           </div>
         ))}
       </div>
